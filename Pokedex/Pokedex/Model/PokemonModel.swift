@@ -16,12 +16,21 @@ struct Pokemon: Identifiable, Codable {
     let type: String
     let description: String
 
+    let attack: Int
+    let defense: Int
+    let height: Int
+    let weight: Int
+
     enum CodingKeys: String, CodingKey {
         case id
         case name
         case imageUrl
         case type
         case description
+        case attack
+        case defense
+        case height
+        case weight
     }
 
     var typeColor: Color {
